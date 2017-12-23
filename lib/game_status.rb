@@ -15,17 +15,6 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-WC = [
-  [0,1,2],
-  [3,4,5],
-  [6,7,8],
-  [0,3,6],
-  [1,4,7],
-  [2,5,8],
-  [0,4,8],
-  [2,4,6]
-]
-
 #board = ["X", "O", "", "O", "X", "X", "O", "X", "O"]
 
 def won?(board)
@@ -66,8 +55,9 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-    if winX
+  if puts(won?(board))
+    
+    if true
       return "X"
     else
       return "O"
