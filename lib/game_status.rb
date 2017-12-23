@@ -26,7 +26,7 @@ WC = [
   [2,4,6]
 ]
 
-#board = ["O", "X", "X", "O", "", "X", "", "X", "O"]
+board = ["O", "X", "X", "O", "", "X", "", "X", "O"]
 
 def won?(board)
   WIN_COMBINATIONS.detect do |wci|
@@ -39,7 +39,7 @@ def won?(board)
 end
 
 def full?(board)
-  puts(board.all? {|i| position_taken?(board,i)})
+  board.all? {|i| position_taken?(board,i)}
 end
 
-#puts(won?(board))
+puts(full?(board))
