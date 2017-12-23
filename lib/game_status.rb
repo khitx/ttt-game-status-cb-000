@@ -38,4 +38,8 @@ def won?(board)
   end
 end
 
+def full?(board)
+  board.all? {|i| position_taken?(board,i)}
+end
+
 #puts(won?(board))
