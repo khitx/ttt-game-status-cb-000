@@ -33,7 +33,7 @@ def won?(board)
     puts("wci #{wci}")
     wci.each do |i|
       puts(wci[i])
-      #board[i].all? == 'X' || board[i].all? == 'O'
+      board[i] == 'X' || board[i] == 'O'
       puts(board[i])
     end
   end
