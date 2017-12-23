@@ -26,11 +26,11 @@ WC = [
   [2,4,6]
 ]
 
-board = ["O", "X", "X", "O", "", "X", "", "X", "O"]
+#board = ["O", "X", "X", "O", "", "X", "", "X", "O"]
 
 def won?(board)
   WIN_COMBINATIONS.detect do |wci|
-    puts("wci #{wci}")
+    #puts("wci #{wci}")
     winX = wci.all? {|i| board[i] == 'X'}
     winO = wci.all? {|i| board[i] == 'O'}
     if winX || winO
@@ -39,4 +39,4 @@ def won?(board)
   end
 end
 
-puts(won?(board))
+#puts(won?(board))
