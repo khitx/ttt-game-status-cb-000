@@ -31,10 +31,9 @@ board = ["O", "", "X", "X", "O", "X", "X", "X", "O"]
 def won?(board)
   WIN_COMBINATIONS.detect do |wci|
     puts("wci #{wci}")
-    win = wci.all? do |i|
-      (board[i] == 'X' || board[i] == 'O')
-    end
-    if win
+    winX = wci.all? {|i| board[i] == 'X'}
+    winO = wci.all? {|i| board[i] == 'O'}
+    if winX || winO
       return wci
     end
   end
