@@ -1,6 +1,5 @@
 # Helper Method
 def position_taken?(board, index)
-  puts(index)
   !(board[index].nil? || board[index] == " ")
 end
 
@@ -40,7 +39,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? {|i| position_taken?(board,i)}
+  board.all? {|i| !(i.nil? || i == " ")}
 end
 
 puts(full?(board))
