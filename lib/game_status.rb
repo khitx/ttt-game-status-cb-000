@@ -40,7 +40,7 @@ end
 
 def full?(board)
   board.all? {|i|
-    (i.nil? || i == " ")
+    !(i.nil? || i == " ")
     puts(i)
   }
 end
