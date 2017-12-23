@@ -26,7 +26,7 @@ WC = [
   [2,4,6]
 ]
 
-board = ["X", "O", "", "O", "X", "X", "O", "X", "O"]
+#board = ["X", "O", "", "O", "X", "X", "O", "X", "O"]
 
 def won?(board)
   WIN_COMBINATIONS.detect do |wci|
@@ -59,4 +59,4 @@ def draw?(board)
   end
 end
 
-puts(draw?(board))
+#puts(draw?(board))
