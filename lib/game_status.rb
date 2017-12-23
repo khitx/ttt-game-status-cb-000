@@ -55,7 +55,8 @@ def over?(board)
 end
 
 def winner(board)
-  return won?(board)[0] 
+  wrow = won?(board)
+  return board[wrow[0]]
 end
 
 puts(winner(board))
