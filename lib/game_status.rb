@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-#board = ["X", "O", "", "O", "X", "X", "O", "X", "O"]
+board = ["X", "O", "", "O", "X", "X", "O", "X", "O"]
 
 def won?(board)
   WIN_COMBINATIONS.detect do |wci|
@@ -56,7 +56,7 @@ end
 
 def winner(board)
   if puts(won?(board))
-    
+
     if true
       return "X"
     else
@@ -65,4 +65,4 @@ def winner(board)
   end
 end
 
-#puts(draw?(board))
+puts(winner(board))
