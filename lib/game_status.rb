@@ -39,7 +39,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? {|i| (i.nil? || i == " ")}
+  board.all? {|i| 
+    (i.nil? || i == " ")
+    puts(i)
+  }
 end
 
 puts(full?(board))
