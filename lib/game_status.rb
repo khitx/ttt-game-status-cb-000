@@ -42,7 +42,7 @@ def full?(board)
   if (board.any? {|i|
     #!(i.nil? || i == " ")
     puts(i)
-    i == "X"
+    i == " "
     })
     return true
   end
