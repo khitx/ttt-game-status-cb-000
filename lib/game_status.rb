@@ -30,7 +30,6 @@ WC = [
 
 def won?(board)
   WIN_COMBINATIONS.detect do |wci|
-    #puts("wci #{wci}")
     winX = wci.all? {|i| board[i] == 'X'}
     winO = wci.all? {|i| board[i] == 'O'}
     if winX || winO
