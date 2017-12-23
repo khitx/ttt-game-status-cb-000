@@ -56,7 +56,11 @@ end
 
 def winner(board)
   wrow = won?(board)
-  return board[wrow[0]]
+  if wrow == []
+    return nil
+  else
+    return board[wrow[0]]
+  end
 end
 
 #puts(winner(board))
