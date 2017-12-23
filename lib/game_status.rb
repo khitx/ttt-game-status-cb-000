@@ -30,9 +30,9 @@ WC = [
 
 def won?(board)
   WIN_COMBINATIONS.detect do |wci|
-    WinX = wci.all? {|i| board[i] == 'X'}
-    WinO = wci.all? {|i| board[i] == 'O'}
-    if WinX || WinO
+    winX = wci.all? {|i| board[i] == 'X'}
+    winO = wci.all? {|i| board[i] == 'O'}
+    if winX || winO
       return wci
     end
   end
@@ -67,7 +67,7 @@ end
 
 def winner(board)
   if won?(board)
-    if WinX
+    if winX
       return "X"
     else
       return "O"
