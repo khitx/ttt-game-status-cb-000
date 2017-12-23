@@ -43,7 +43,7 @@ def full?(board)
     puts(i.nil?)
     puts(i == " ")
     puts(!(i.nil? || i == " "))
-    puts(i)
+    #puts(i)
   }
 end
 
