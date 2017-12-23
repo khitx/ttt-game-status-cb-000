@@ -32,6 +32,7 @@ def won?(board)
   WIN_COMBINATIONS.detect do |wci|
     puts("wci #{wci}")
     wci.any? do |i|
+      puts(i)
       puts(wci[i])
       board[i] == 'X' || board[i] == 'O'
       puts(board[i])
