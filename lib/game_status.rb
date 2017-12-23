@@ -40,12 +40,12 @@ end
 
 def full?(board)
   if (board.any? {|i|
-    #!(i.nil? || i == " ")
-    puts(i)
-    i.nil?
+    (i == "" || i == " ")
+    #puts(i)
+    #i.nil?
     #i == " "
     })
-    return true
+    return false
   end
 end
 
