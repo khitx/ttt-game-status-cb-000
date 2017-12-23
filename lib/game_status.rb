@@ -46,4 +46,14 @@ def full?(board)
   end
 end
 
+def draw?(board)
+  if won(board) 
+    return false
+  elsif full?(board)
+    return true
+  else
+    return false
+  end
+end
+
 #puts(full?(board))
