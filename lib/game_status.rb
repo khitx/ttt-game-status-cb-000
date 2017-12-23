@@ -30,6 +30,7 @@ board = ["X", "Y", "Z", " ", " ", " ", " ", " ", " "]
 
 def won?(board)
   WIN_COMBINATIONS.detect do |wci|
+    puts(wci)
     wci.each do |i|
       puts(wci)
       puts(wci[i])
