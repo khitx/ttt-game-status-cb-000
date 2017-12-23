@@ -30,15 +30,17 @@ board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 
 def won?(board)
   WIN_COMBINATIONS.detect do |wci|
-    puts("wci #{wci}")
-    wci.all? do |i|
+    #puts("wci #{wci}")
+    wci.any? do |i|
       #puts("i: #{i}")
       #puts("wci[i]: #{wci[i]}")
       if (board[i] == 'X' || board[i] == 'O')
-        puts(board[i])
+        #puts(board[i])
+        return wci
       end
     end
   end
 end
 
-won?(board)
+puts(won?(board))
+
