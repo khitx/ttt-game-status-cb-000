@@ -15,8 +15,6 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-#board = ["X", "X", "X", "O", "X", "X", "O", "X", "O"]
-
 def won?(board)
   WIN_COMBINATIONS.detect do |wci|
     winX = wci.all? {|i| board[i] == 'X'}
@@ -62,5 +60,3 @@ def winner(board)
     return board[wrow[0]]
   end
 end
-
-#puts(winner(board))
