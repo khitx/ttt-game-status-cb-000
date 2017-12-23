@@ -56,7 +56,7 @@ end
 
 def winner(board)
   wrow = won?(board)
-  if wrow == []
+  if wrow == nil
     return nil
   else
     return board[wrow[0]]
