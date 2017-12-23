@@ -35,7 +35,7 @@ def won?(board)
       #puts("i: #{i}")
       #puts("wci[i]: #{wci[i]}")
       if (board[i] == 'X' || board[i] == 'O')
-        #puts(board[i])
+        puts(board[i])
         return wci
       end
     end
