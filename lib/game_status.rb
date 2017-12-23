@@ -42,7 +42,7 @@ def full?(board)
   board.all? {|i|
     puts(i.nil?)
     puts(i == " ")
-    !(i.nil? || i == " ")
+    puts()!(i.nil? || i == " "))
     puts(i)
   }
 end
