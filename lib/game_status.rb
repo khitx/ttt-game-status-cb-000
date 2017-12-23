@@ -55,14 +55,7 @@ def over?(board)
 end
 
 def winner(board)
-  if puts(won?(board))
-
-    if true
-      return "X"
-    else
-      return "O"
-    end
-  end
+  return won?(board)[0] 
 end
 
 puts(winner(board))
