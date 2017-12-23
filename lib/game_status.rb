@@ -1,5 +1,6 @@
 # Helper Method
 def position_taken?(board, index)
+  puts(index)
   !(board[index].nil? || board[index] == " ")
 end
 
