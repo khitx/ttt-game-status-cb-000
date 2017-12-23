@@ -39,7 +39,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? {|i| position_taken?(board,i)}
+  puts(board.all? {|i| position_taken?(board,i)})
 end
 
 #puts(won?(board))
