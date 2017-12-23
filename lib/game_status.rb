@@ -26,7 +26,7 @@ WC = [
   [2,4,6]
 ]
 
-board = ["X", "O", "X", "O", "X", "X", "X", "O", "O"]
+board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
 
 def won?(board)
   WIN_COMBINATIONS.detect do |wci|
